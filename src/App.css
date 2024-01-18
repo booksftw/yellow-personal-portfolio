@@ -3,8 +3,33 @@ body {
   /* background-color: green; */
 }
 
+h1 {
+  font-size: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Cabin", sans-serif;
+}
+
+p {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
 .hero-image-text {
-  width: 1007px;
+  max-width: 1007px;
   margin: 0 auto;
   display: block;
   margin-top: 177px;
@@ -19,7 +44,6 @@ body {
 
 .hero-elipse-text,
 .hero-section-small-text {
-  /* How to import this google font? */
   font-family: "Cabin";
   font-size: 24px;
 }
@@ -48,13 +72,17 @@ body {
 }
 
 .me-about-image {
-  width: 472px;
+  max-width: 472px;
 }
 
 .outter-about-me-container {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
   height: 800px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: -100px;
 }
+
 .inner-about-me-section {
   /* margin-top: 500px; */
 }
@@ -72,4 +100,303 @@ body {
 
 #about-me-intro-container {
   margin-right: 200px;
+  margin-left: 100px;
+}
+
+#skills-container {
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 400px;
+  height: 800px;
+  text-align: center;
+}
+
+.skills-details-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-and-points-wrapper {
+  text-align: center;
+}
+
+.skills-and-points-wrapper img:nth-child(1) {
+  max-height: 500px;
+}
+
+.skills-and-points-wrapper img:nth-child(2) {
+  margin-bottom: 20px;
+  margin-left: 50px;
+  /* max-width: 50%; */
+  max-height: 450px;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 500px;
+  margin-right: 100px;
+}
+
+#projects-container div {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+#projects-container div p {
+  margin-left: 100px;
+  width: 500px;
+}
+
+#a-little-about-me-container {
+  display: flex;
+  margin-left: 500px;
+  margin-right: 100px;
+}
+
+.a-little-about-me-text {
+  width: 500px;
+}
+
+#a-little-about-me-container img {
+  width: 400px;
+}
+
+.a-little-about-me-caption {
+  text-align: center;
+}
+
+#contact-container {
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+#contact-container h1 {
+  text-align: center;
+}
+
+.contact-socials-container {
+  display: flex;
+  align-items: center;
+}
+
+.contact-socials-container img {
+  margin-top: 50px;
+  width: 40px;
+}
+
+.contact-fb-icon,
+.contact-behance-icon {
+  margin-left: 30px;
+}
+
+.contact-img-container {
+  position: relative;
+}
+
+.contact-radial-graphic {
+  position: absolute;
+  width: 300px;
+  top: 10px;
+  z-index: -100;
+}
+
+
+
+
+
+@media only screen and (max-width: 1350px) {
+
+  /* For mobile phones: */
+  .skills-and-points-wrapper img {
+    width: auto;
+    height: auto;
+  }
+
+  .hero-elipse-text {
+    left: 700px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+
+  .hero-image-text {
+    max-width: 622px;
+  }
+
+  .hero-elipse {
+    width: 66%;
+  }
+
+  .hero-elipse-text {
+    position: absolute;
+    width: 368px;
+    left: 402px;
+    top: 130px;
+  }
+
+  /* For mobile phones: */
+  .skills-and-points-wrapper img:nth-child(1) {
+    max-height: 400px;
+  }
+
+  .skills-and-points-wrapper img:nth-child(2) {
+    max-height: 360px;
+  }
+
+  #about-me-intro-container {
+    margin-right: 20px;
+  }
+
+  .me-about-image {
+    max-width: 364px;
+  }
+
+  #projects-container,
+  #a-little-about-me-container {
+    margin-left: 100px;
+  }
+
+  #projects-container div p {
+    min-width: 268px;
+  }
+
+  #a-little-about-me-container {
+    margin-right: 0;
+  }
+}
+
+
+
+@media only screen and (max-width: 892px) {
+
+  .hero-elipse-text {
+    left: 134px;
+    font-size: 18px;
+    width: 221px;
+    top: 89px;
+  }
+
+  /* For mobile phones: */
+  .about-me-intro-header,
+  .about-me-description {
+    width: 288px;
+  }
+
+  .me-about-image {
+    max-width: 307px;
+    /* display: none; */
+  }
+
+  .skills-and-points-wrapper img:nth-child(1) {
+    max-height: 300px;
+  }
+
+  .skills-and-points-wrapper img:nth-child(2) {
+    max-height: 270px;
+  }
+
+  #projects-container img {
+    max-width: 200px;
+    max-height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .skills-and-points-wrapper img:nth-child(1) {
+    max-height: 200px;
+  }
+
+  .skills-and-points-wrapper img:nth-child(2) {
+    max-height: 170px;
+  }
+
+  #skills-container {
+    height: 414px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  p {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .hero-image-text {
+    max-width: 313px;
+  }
+
+  .hero-elipse {
+    right: 53px;
+  }
+
+  .hero-section-small-text {
+    top: 454px;
+    left: 43px;
+  }
+
+  .inner-about-me-section {
+    flex-wrap: wrap;
+  }
+
+  .me-about-image {
+    margin-top: 100px;
+  }
+
+  .me-text {
+    left: -13%;
+    top: 83%;
+  }
+
+  .skills-and-points-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  #skills-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .skills-and-points-wrapper img:nth-child(2) {
+    margin-top: 10px;
+  }
+
+
+  #projects-container div p {
+    min-width: 134px;
+    margin-left: 19px;
+  }
+
+  #projects-container,
+  #a-little-about-me-container {
+    margin-left: 50px;
+  }
+
+  #projects-container {
+    margin-right: 50px;
+  }
+
+  div#a-little-about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #a-little-about-me-container img {
+    max-width: 310px;
+  }
 }
