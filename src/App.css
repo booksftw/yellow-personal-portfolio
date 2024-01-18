@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  background-color: #eae8e3;
+  /* background-color: green; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-image-text {
+  width: 1007px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 177px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-elipse {
+  position: absolute;
+  right: 300px;
+  top: 100px;
+  z-index: -100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero-elipse-text,
+.hero-section-small-text {
+  /* How to import this google font? */
+  font-family: "Cabin";
+  font-size: 24px;
+}
+
+.hero-elipse-text {
+  position: absolute;
+  width: 368px;
+  left: 923px;
+  top: 226px;
+}
+
+.hero-section-small-text {
+  position: absolute;
+  top: 806px;
+  left: 246px;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about-me-intro-header,
+.about-me-description {
+  width: 480px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.me-about-image {
+  width: 472px;
+}
+
+.outter-about-me-container {
+  background-color: greenyellow;
+  height: 800px;
+}
+.inner-about-me-section {
+  /* margin-top: 500px; */
+}
+
+.me-text {
+  width: 280px;
+  position: relative;
+  left: 55%;
+  top: 33%;
+}
+
+#about-me-invis-div {
+  height: 200px;
+}
+
+#about-me-intro-container {
+  margin-right: 200px;
 }
